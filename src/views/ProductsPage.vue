@@ -9,7 +9,7 @@
 				<h3 class="product-name">{{ product.name }}</h3>
 				<p class="product-price">${{ product.price }}</p>
 				<router-link v-bind:to="'/products/' + product.id">
-					<button>View Details, Haha</button>
+					<button>View Details</button>
 				</router-link>
 			</div>
 		</div>
