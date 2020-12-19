@@ -1,11 +1,24 @@
 <template>
-	<h1> This is my product detailssssssss page. </h1>
+	<div id="page-wrap">
+		<div id="img-wrap">
+			<img v-bind:src="product.imageUrl" />
+		</div>
+		<div id="product-details">
+			<h1>{{ product.name }}</h1>
+		</div>
+	</div>
 </template>
 
 <script>
-export default {
-    name: 'ProductDetailPage'
+import {products} from '../fake-data';
 
+export default {
+    name: 'ProductDetailPage',
+	data() {
+        return {
+          product: products.find((p) => p.id === this.$route.params.id )
+        }
+	}
 }
 </script>
 
