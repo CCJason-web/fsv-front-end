@@ -1,5 +1,5 @@
 <template>
-	<div id="page-wrap">
+	<div id="page-wrap" style="zoom: 75%">
 		<div id="img-wrap">
 			<img v-bind:src="product.imageUrl" />
 		</div>
