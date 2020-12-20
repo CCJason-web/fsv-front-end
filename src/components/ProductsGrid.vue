@@ -1,9 +1,10 @@
 <template>
-	<div class="grid-wrap">
+	<div>
 		<ProductsGridItem
-				v-for="product in products"
-				:key="product.id"
-				:product="product"/>
+		class="product-item col-sm-3"
+		v-for="product in products"
+		:key="product.id"
+		:product="product"/>
 	</div>
 </template>
 <script>
@@ -17,3 +18,11 @@ export default {
     }
 }
 </script>
+<style scoped>
+	.product-item {
+		border: 1px solid lightgray;
+		margin: 2px;
+	}
+
+
+</style>

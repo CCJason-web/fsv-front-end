@@ -1,5 +1,5 @@
 <template>
-	<div class="product-item col-sm-3">
+	<div class="">
 		<img v-bind:src="product.imageUrl"/>
 		<h3 class="product-name">{{ product.name }}</h3>
 		<p class="product-price">${{ product.price }}</p>
@@ -17,10 +17,7 @@ export default {
 </script>
 
 <style scoped>
-	.product-item {
-		border: 1px solid lightgray;
-		margin: 2px;
-	}
+
 	.product-item h3{
 		font-weight: bold;
 	}
